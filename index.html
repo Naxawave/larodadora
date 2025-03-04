@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>La Rodadora</title>
+   </head>
+   <body>
+
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <button id="showButton">Mostrar</button>
+         </div>
+     </div>
+
+     <div id="rodaShop" class="roda_shop hide">
+      <div class="roda_shop_content">
+         <div class="rodaImg">
+            <img src="assets/img/icons-logos/dinosaur.png">
+         </div>
+         <div class="rodaInfo">
+            <h2>No olvides visitar la RodaShop</h2>
+            <p>¡Puedes econtrar productos de tu interes!</p>
+         </div>
+         
+
+         <button id="closeRodaShop"><i class="ri-close-line"></i></button>
+      </div>
+  </div>
+      
+      <div id="loading-screen">
+         <div id="loading-modal">
+             <!-- From Uiverse.io by SelfMadeSystem --> 
+            <svg class="loader" viewBox="0 0 384 384" xmlns="http://www.w3.org/2000/svg">
+               <circle
+               class="active"
+               pathLength="360"
+               fill="transparent"
+               stroke-width="32"
+               cx="192"
+               cy="192"
+               r="176"
+               ></circle>
+               <circle
+               class="track"
+               pathLength="360"
+               fill="transparent"
+               stroke-width="32"
+               cx="192"
+               cy="192"
+               r="176"
+               ></circle>
+            </svg>
+ 
+ 
+         </div>
+     </div>
+
+      <!--=============== HEADER ===============-->
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="#" class="nav__logo">
+                  <div class="icon_page"><img src="https://cdn.brandfetch.io/id9MUgwQB0/w/195/h/78/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"></div>
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="#" class="nav__link link">Inicio</a></li>
+
+                  <li><a href="#" class="nav__link link">¿Quienes somos?</a></li>
+
+                  <li><a href="#" class="nav__link link">Empresas</a></li>
+
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Mas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+
+                        <li>
+                           <a href="https://www.ticketor.com/larodadora" class="dropdown__link">
+                              <i class="ri-ticket-2-line"></i> Comprar boletos
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="https://www.ticketor.com/larodadora/tickets/donativos-284377#buy" class="dropdown__link">
+                              <i class="ri-hand-heart-line"></i> Donar
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-profile-line"></i> Mi servicio
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <!--=============== DROPDOWN 2 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Agendar <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-user-line"></i> Planea tu visita
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-school-line"></i> Escuelas
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <i class="ri-team-line"></i> Fiestas
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#" class="nav__link link">Contacto</a></li>
+
+
+                  <li><a href="#" class="nav__link link"><i class="ri-question-mark"></i></a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <!--=============== MAIN HEADER ===============-->
+      <section class="main_header">
+         <img id="header_img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/c7/5e/2f/lobby-del-museo.jpg?w=900&h=500&s=1">
+         <h2>La ciencia y la diversion en un solo lugar</h2>
+      </section>
+
+      <!--=============== HEADER START ===============-->
+      <section class="header_start">
+         <div class="tile rectangle natural">
+             <a href="#">
+                 <img src="../assets/img/enviroments/natural/natural-1.jpeg" alt="Tile 1">
+             </a>
+         </div>
+ 
+         <div class="tile small natural">
+             <a href="#">
+                 <img src="../assets/img/enviroments/natural/natural-2.jpeg" alt="Tile 2">
+             </a>
+         </div>
+ 
+         <div class="tile medium natural">
+             <a href="#">
+                 <img src="../assets/img/enviroments/natural/natural-3.jpeg" alt="Tile 3">
+             </a>
+         </div>
+ 
+         <div class="tile large natural">
+             <a href="#">
+                 <img src="../assets/img/enviroments/natural/natural-4.jpeg" alt="Tile 4">
+             </a>
+         </div>
+ 
+         <div class="tile small natural">
+             <a href="#">
+                 <img src="../assets/img/enviroments/natural/natural-5.png" alt="Tile 5">
+             </a>
+         </div>
+ 
+         <div class="tile medium natural">
+             <a href="#">
+                 <img src="../assets/img/enviroments/natural/natural-6.png" alt="Tile 6">
+             </a>
+         </div>
+ 
+         <div class="tile large party">
+             <a href="#">
+                 <img src="../assets/img/enviroments/social/social-1.jpeg" alt="Tile 7">
+             </a>
+         </div>
+ 
+         <div class="tile medium social">
+             <a href="#">
+                 <img src="../assets/img/enviroments/social/social-4.jpeg" alt="Tile 8">
+             </a>
+         </div>
+ 
+         <div class="tile rectangle party">
+             <a href="#">
+                 <img src="../assets/img/enviroments/party/party-2.jpeg" alt="Tile 9">
+             </a>
+         </div>
+ 
+         <div class="tile rectangle party">
+             <a href="#">
+                 <img src="../assets/img/enviroments/party/party-1.jpeg" alt="Tile 10">
+             </a>
+         </div>
+ 
+         <div class="tile medium party">
+             <a href="#">
+                 <img src="../assets/img/enviroments/party/party-4.jpeg" alt="Tile 11">
+             </a>
+         </div>
+ 
+         <div class="tile small social">
+             <a href="#">
+                 <img src="../assets/img/enviroments/social/social-5.jpeg" alt="Tile 12">
+             </a>
+         </div>
+
+         <div class="tile small social">
+            <a href="#">
+                <img src="../assets/img/enviroments/social/social-3.jpeg" alt="Tile 12">
+            </a>
+        </div>
+
+        <div class="tile small party">
+            <a href="#">
+                 <img src="../assets/img/enviroments/party/party-5.jpeg" alt="Tile 12">
+            </a>
+         </div>
+         
+         <div class="tile small social">
+            <a href="#">
+               <img src="../assets/img/enviroments/social/social-6.jpeg" alt="Tile 12">
+            </a>
+        </div>
+
+     </section>
+
+     <!--=============== MUSEUM ===============-->
+     <section class="museum">
+
+      <div class="museum_map">
+         <img src="https://cdn.lugc.link/94154ee0-e87a-485d-8bf7-d7f4ec2cd4e1/-/preview/550x526/-/format/auto/">
+      </div>
+
+      <div class="museum_environments" id="changeColorEnvironments">
+         <h2 class="environments_title">Entornos</h2>
+         <header class="environments_buttons">
+             <button type="button" class="environments_button natural" id="btnNatural">Natural</button>
+             <button type="button" class="environments_button social" id="btnSocial">Social</button>
+             <button type="button" class="environments_button participatory" id="btnParticipatory">Participativo</button>
+             <button type="button" class="environments_button paleontology_dome" id="btnPaleontologyDome">Paleontología</button>
+             <button type="button" class="environments_button artic" id="btnArtic">El artico</button>
+             <button type="button" class="environments_button garden" id="btnGarden">Patio sustentable</button>
+         </header>
+
+         <div class="environments">
+            <div class="natural_environment environment">
+               <h2 class="environment_title">Natural</h2>
+
+               <div class="environment_content">
+                  <div class="environment_information">
+                     <p>Esfera de la Ciencia</p>
+                     <p>Piso Interactivo</p>
+                     <p>Magnetita</p>
+                     <p>Cinturón de Asteroides</p>
+                     <p>Tormentas en Marte</p>
+                     <p>Quantum</p>
+                     <p>Sombras</p>
+                     <p>Explora Lab</p>
+                     <p>Ajolotes</p>
+                     <p>Fauna</p>
+                     <p>Ecosistemas</p>
+                     <p>Remolino</p>
+                     <p>Tormenta</p>
+                     <p>Río Bravo</p>
+                     <p>Taller de Barquitos</p>
+                     <p>Biznaga (Cama de Clavos)</p>
+                     <p>Agua</p>
+                     <p>Pared de Hielo</p>
+                     <p>Rocas</p>
+                     <p>Viento</p>
+                     <p>Energía Solar</p>
+                     <p>Acuíferos</p>
+                     <p>Alebrije (Grillo)</p>
+                     <p>Zoona Veterinaria</p>
+                     <p>Mariposario</p>
+                     <p>Arañas</p>
+                     <p>Artrópodos</p>
+                     <p>Aves</p>
+                     <p>Microorganismos</p>
+                     <p>Sonidos</p>
+                  </div>
+   
+                  <div class="environment_image" id="changing_imageNatural">
+                     <img src="https://cdn.lugc.link/e4d3b69c-6ef1-4865-955b-074c5edd46f7/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/354x/">
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="social_environment environment">
+               <h2 class="environment_title">Social</h2>
+
+               <div class="environment_content">
+                  <div class="environment_information">
+                     <p>Cazadores y Recolectores</p>
+                     <p>Desierto</p>
+                     <p>Ciudadanía</p>
+                     <p>Piano</p>
+                     <p>Ciudad</p>
+                     <p>Personajes</p>
+                     <p>Mini Súper S-Mart</p>
+                     <p>Calles</p>
+                     <p>Arquitectura</p>
+                     <p>Rupestre</p>
+                     <p>Lenguaje</p>
+                     <p>Imágenes</p>
+                  </div>
+   
+                  <div class="environment_image" id="changing_imageSocial">
+                     <img src="https://cdn.lugc.link/208966fc-8fc9-4fe5-b087-b1c6f1bab8e2/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="party_environment environment">
+               <h2 class="environment_title">Participativo</h2>
+
+               <div class="environment_content">
+                  <div class="environment_information">
+                     <p>Bar de Experimentos</p>
+                     <p>Mind Ball</p>
+                     <p>Colonia Marciana</p>
+                     <p>Monstruo Come pesadillas</p>
+                     <p>Roda Maket</p>
+                     <p>La Magia del Agua</p>
+                     <p>Generador de Van Der Graaf</p>
+                     <p>Brazo Robótico</p>
+                     <p>Mini Golf</p>
+                     <p>Burbujas</p>
+
+                  </div>
+   
+                  <div class="environment_image" id="changing_imageParty">
+                     <img src="https://cdn.lugc.link/d89bdd37-d9db-4024-a090-6d67f44dd701/-/crop/1440x970/0,112/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                  </div>
+
+               </div>
+
+            </div>
+
+            <div class="party_environment environment">
+               <h2 class="environment_title">Paleontología</h2>
+
+               <div class="environment_content">
+                  <div class="environment_information">
+                     <p>Mamut</p>
+                     <p>Ave Moa</p>
+                     <p>Ave del Terror</p>
+                     <p>T-Rex</p>
+                     <p>Titanes del Pasado</p>
+                     <p>Hadrosaurio</p>
+                     <p>Péndulo de Foucault</p>
+                     <p>Abrevadero</p>
+                     <p>Glypotherium</p>
+                     <p>Tigre Colmillos de Sable</p>
+                     <p>Arenero</p>
+                     <p>Vida Marina</p>
+                     <p>Taller de Fósiles</p>
+                     <p>Raptor</p>
+                     <p>Pterodáctilo</p>
+                     <p>Coahuilaceratops</p>
+
+                  </div>
+   
+                  <div class="environment_image" id="changing_imagePaleo">
+                     <img src="https://cdn.lugc.link/4282b0e6-6ee2-41d9-8d2b-4472004f598b/-/crop/1440x1119/0,321/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                  </div>
+
+               </div>
+
+            </div>
+
+            <div class="party_environment environment">
+               <h2 class="environment_title">Artico</h2>
+
+               <div class="environment_content">
+                  <div class="environment_information">
+                     <p><strong>El Ártico</strong></p>
+
+                     <p><strong>Sinopsis</strong></p>
+
+                     <p>Un viaje a la vida de una madre oso polar y sus dos cachorros de siete meses mientras navegan por el cambiante desierto ártico que llaman hogar.</p>
+
+                     <p><strong>Funciones:</strong></p>
+
+                     <p>Jueves y viernes: 1:00 pm y 3:00 pm</p>
+                     <p>Sábados y domingos: 1:00 pm, 2:30 pm, 4:00 pm y 5:30 pm.</p>
+
+                     <p><strong>Acceso todo incluido:</strong> $150.00 m.n.</p>
+                     <p><strong>Paquete familiar todo incluido:</strong> $500.00 m.n. (incluye 4 accesos)</p>
+
+                     <p><em>*Sujeto a disponibilidad de cupo y cambios sin previo aviso.</em></p>
+                  </div>
+   
+                  <div class="environment_image">
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dGU0k18KqUc?si=xiA4e5cvtLE6WVUm&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+
+               </div>
+
+            </div>
+
+            <div class="party_environment environment">
+               <h2 class="environment_title">Patio sustentable</h2>
+
+               <div class="environment_content">
+                  <div class="environment_information">
+                     <p>Tortugas</p>
+                     <p>Perritos de la Pradera</p>
+                     <p>Mapaches</p>
+                     <p>Cuencas</p>
+
+                  </div>
+   
+                  <div class="environment_image" id="changing_imageGarden">
+                     <img src="https://cdn.lugc.link/b64ab22b-1ccb-410f-9d9a-f7feb4840527/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                  </div>
+
+               </div>
+
+            </div>
+
+
+         </div>
+      </div>
+     </section>
+
+     <!--=============== ACTIVITYS ===============-->
+     <section class="activitys">
+      <h2 class="activitys_header_title">Nuestras actividades especiales</h2>
+
+      <div class="activitys_content">
+         <div class="activity_left">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dGU0k18KqUc?si=OeP5U81HshrDyzal&amp;start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+            <a href="#" class="activity_left_title">Ver mas</a>
+        </div>
+        
+         <div class="activity_right">
+             <a href="#" target="">
+                 <img src="https://cdn.lugc.link/5e4b1234-e997-4a1d-8d6b-713297288df5/-/crop/1326x1297/0,235/-/preview/291x285/-/format/auto/" id="activityUpdate" alt="Activity image">
+             </a>
+             
+         </div>
+     </div>
+     
+     </section>
+
+     <!--=============== LOCATION ===============-->
+     <section class="location">
+      <div class="museum_location_map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.4755947341039!2d-106.4287451369095!3d31.68990227167915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75c320bf457f7%3A0x5e3f28d1f3b206f8!2sLa%20Rodadora%20Espacio%20Interactivo!5e0!3m2!1sen!2smx!4v1740368238071!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+      <div class="schedule" id="scheduleFrame">
+         <p>Nuestro horario es:</p>
+         <div class="subschedule">
+            <div class="time left">
+               <p>Jueves y viernes</p>
+               <p>9:00 am a 5:00 pm</p>
+            </div>
+            <div class="time right">
+               <p>Sabado y domingo</p>
+               <p>11:00 am a 7:00 pm</p>
+            </div>
+         </div>
+         <h2 class="opened">Ahora estamos:</h2>
+         <p class="status" id="status">Cerrados</p>
+         <div class="status_museum">
+            <h2 class="number">Nuesto numero es:</h2>
+            <p class="status">(656) 257 0909</p>
+            <br>
+            <p>Av. Teófilo Borunda y Jesús Soltero Lozoya</p>
+            <p>Colonia Jarudo del Norte.</p>
+            <p>Enseguida de Parque Central Poniente.</p>
+            <p>Ciudad Juárez Chihuahua México.</p>
+            <button class="number" id="hideButton">Ocultar</button>
+         </div>
+      </div>
+     </section>
+
+     <!--=============== SUBFOOTER ===============-->
+     
+     <section class="subfooter">
+      <h2 class="subfooter">Descubre todas nuestras actividades a través de nuestros boletines, blog y noticias de los medios de comunicación.</h2>
+
+      <div class="subfooter_buttons">
+         <button class="sfbtn">Ir a boletines</button>
+         <button class="sfbtn">Ir al blog</button>
+         <button class="sfbtn">Ir a noticias</button>
+      </div><br>
+
+      <div class="form">
+         <form
+         action="https://formspree.io/f/mnnjeoqw"
+         method="POST"
+         >
+         <label>
+            Tu correo electronico: <br>
+            <input type="email" name="Email" class="input_footer">
+         </label>
+         <button type="submit" class="button_footer">Suscribirme</button>
+      </form>
+      <p>Suscríbete a nuestro boletín para recibir promociones, eventos y noticias.</p>
+      </div><br>
+
+      <div class="social_media_buttons">
+         <a href="https://www.facebook.com/LaRodadora/" class="social_media"><i class="ri-facebook-circle-line"></i></a>
+         <a href="https://www.youtube.com/channel/UCXWCZnJfAqTZfiiSHvsJzWQ" class="social_media"><i class="ri-youtube-line"></i></a>
+         <a href="https://x.com/La_Rodadora" class="social_media"><i class="ri-twitter-x-line"></i></a>
+         <a href="https://www.instagram.com/larodadora/" class="social_media"><i class="ri-instagram-line"></i></a>
+         <a href="https://www.tiktok.com/@larodadora" class="social_media"><i class="ri-tiktok-line"></i></a>
+      </div><br>
+
+      <div class="footer_img">
+         <img src="https://images.assets-landingi.com/YvIV58n9/logo_rodadora.png">
+         <img src="https://cdn.lugc.link/873301fe-6b8f-4e60-af49-bc4cdcb2fadd/-/preview/70x71/-/format/auto/">
+         <img src="https://images.assets-landingi.com/e78hgnDh/punto_limpio_logo.webp">
+         <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150780-d4946477-Reviews-La_Rodadora_Espacio_Interactivo-Ciudad_Juarez_Northern_Mexico.html"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"></a>
+
+      </div>
+
+      <h6>Copyright © 2025 La Rodadora y Black Labs • Todos los derechos reservados</h6>
+      <a class="tyc" id="termsAndConditions" href="#">Términos y condiciones • Aviso de privacidad</a>
+
+     </section>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/environments_img_change.js"></script>
+   </body>
+</html>
