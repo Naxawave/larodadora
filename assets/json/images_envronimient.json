@@ -1,0 +1,39 @@
+{
+  "natural": [
+    "assets/img/enviroments/natural/natural-1.jpeg",
+    "assets/img/enviroments/natural/natural-3.jpeg",
+    "assets/img/enviroments/natural/natural-4.jpeg",
+    "assets/img/enviroments/natural/natural-2.jpeg",
+    "assets/img/enviroments/natural/natural-5.png",
+    "assets/img/enviroments/natural/natural-6.png"
+  ],
+  "social": [
+    "assets/img/enviroments/social/social-1.jpeg",
+    "assets/img/enviroments/social/social-2.jpeg",
+    "assets/img/enviroments/social/social-3.jpeg",
+    "assets/img/enviroments/social/social-4.jpeg",
+    "assets/img/enviroments/social/social-5.jpeg",
+    "assets/img/enviroments/social/social-6.jpeg"
+  ],
+  "party": [
+    "assets/img/enviroments/party/party-1.jpeg",
+    "assets/img/enviroments/party/party-2.jpeg",
+    "assets/img/enviroments/party/party-3.jpeg",
+    "assets/img/enviroments/party/party-4.jpeg",
+    "assets/img/enviroments/party/party-5.jpeg",
+    "assets/img/enviroments/party/party-6.jpeg"
+  ],
+  "paleo": [
+    "assets/img/enviroments/palentology/paleo-1.jpeg",
+    "assets/img/enviroments/palentology/paleo-2.jpeg",
+    "assets/img/enviroments/palentology/paleo-3.jpeg",
+    "assets/img/enviroments/palentology/paleo-4.jpeg",
+    "assets/img/enviroments/palentology/paleo-5.jpeg",
+    "assets/img/enviroments/palentology/paleo-6.jpeg"
+  ],
+  "garden": [
+    "assets/img/enviroments/garden/garden-1.jpeg",
+    "assets/img/enviroments/garden/garden-2.jpeg",
+    "assets/img/enviroments/garden/garden-3.jpeg"
+  ]
+}

@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(function() {
         rodaFrame.classList.remove("hide");
-    }, 8000)
+    }, 15000)
 
     btnHide.addEventListener("click", function() {
         rodaFrame.classList.add("hide");

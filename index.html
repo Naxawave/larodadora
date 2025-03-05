@@ -3,6 +3,16 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="La Rodadora">
+      <meta name="date" content="2025-03-04">
+      <meta name="robots" content="index, follow">
+      <link rel="canonical" href="https://larodadora.org">
+
+
+
+      <meta name="description" content="Somos la rodadora, un lugar Interactivo tanto para niños como adutos,
+       diviertete en todas nuestras exibiciones disponibles, ademas te recomendamos ir a nuestro cine, donde pasaran las mejores peliculas.">
+
 
       <!--=============== REMIXICONS ===============-->
       <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -23,7 +33,7 @@
      <div id="rodaShop" class="roda_shop hide">
       <div class="roda_shop_content">
          <div class="rodaImg">
-            <img src="assets/img/icons-logos/dinosaur.png">
+            <img src="assets/img/icons-logos/dinosaur.png" alt="RodaDino">
          </div>
          <div class="rodaInfo">
             <h2>No olvides visitar la RodaShop</h2>
@@ -31,7 +41,7 @@
          </div>
          
 
-         <button id="closeRodaShop"><i class="ri-close-line"></i></button>
+         <button id="closeRodaShop" aria-label="Cerrar RodaShop"><i class="ri-close-line"></i></button>
       </div>
   </div>
       
@@ -68,7 +78,7 @@
          <nav class="nav container">
             <div class="nav__data">
                <a href="#" class="nav__logo">
-                  <div class="icon_page"><img src="https://cdn.brandfetch.io/id9MUgwQB0/w/195/h/78/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"></div>
+                  <div class="icon_page"><img src="assets/img/icons-logos/la_rodadora_logo.png" alt="Logo rodadora"></div>
                </a>
                
                <div class="nav__toggle" id="nav-toggle">
@@ -80,11 +90,11 @@
             <!--=============== NAV MENU ===============-->
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__link link">Inicio</a></li>
+                  <li><a href="index.html" class="nav__link link">Inicio</a></li>
 
-                  <li><a href="#" class="nav__link link">¿Quienes somos?</a></li>
+                  <li><a href="about-us" class="nav__link link">¿Quienes somos?</a></li>
 
-                  <li><a href="#" class="nav__link link">Empresas</a></li>
+                  <li><a href="companies" class="nav__link link">Empresas</a></li>
 
                   <!--=============== DROPDOWN 1 ===============-->
                   <li class="dropdown__item">
@@ -107,7 +117,7 @@
                         </li>
 
                         <li>
-                           <a href="#" class="dropdown__link">
+                           <a href="my-service" aria-label="Mi servicio social" class="dropdown__link">
                               <i class="ri-profile-line"></i> Mi servicio
                            </a>
                         </li>
@@ -152,9 +162,13 @@
 
       <!--=============== MAIN HEADER ===============-->
       <section class="main_header">
-         <img id="header_img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/c7/5e/2f/lobby-del-museo.jpg?w=900&h=500&s=1">
+         <img id="header_img" src="assets/img/backgrounds/lobby-del-museo.jpeg" alt="lobby del museo">
          <h2>La ciencia y la diversion en un solo lugar</h2>
       </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path fill="#f3743e" fill-opacity="1" d="M0,288L60,261.3C120,235,240,181,360,165.3C480,149,600,171,720,186.7C840,203,960,213,1080,192C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+       </svg>
+      
 
       <!--=============== HEADER START ===============-->
       <section class="header_start">
@@ -247,14 +261,17 @@
                <img src="assets/img/enviroments/social/social-6.jpeg" alt="Tile 12">
             </a>
         </div>
-
      </section>
+
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f3743e" fill-opacity="1" d="M0,64L80,101.3C160,139,320,213,480,218.7C640,224,800,160,960,128C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
 
      <!--=============== MUSEUM ===============-->
      <section class="museum">
 
       <div class="museum_map">
-         <img src="https://cdn.lugc.link/94154ee0-e87a-485d-8bf7-d7f4ec2cd4e1/-/preview/550x526/-/format/auto/">
+         <img src="https://cdn.lugc.link/94154ee0-e87a-485d-8bf7-d7f4ec2cd4e1/-/preview/550x526/-/format/auto/" alt="museum map">
       </div>
 
       <div class="museum_environments" id="changeColorEnvironments">
@@ -307,7 +324,7 @@
                   </div>
    
                   <div class="environment_image" id="changing_imageNatural">
-                     <img src="https://cdn.lugc.link/e4d3b69c-6ef1-4865-955b-074c5edd46f7/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/354x/">
+                     <img src="https://cdn.lugc.link/e4d3b69c-6ef1-4865-955b-074c5edd46f7/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/resize/354x/" alt="Natual">
                   </div>
 
                </div>
@@ -333,7 +350,7 @@
                   </div>
    
                   <div class="environment_image" id="changing_imageSocial">
-                     <img src="https://cdn.lugc.link/208966fc-8fc9-4fe5-b087-b1c6f1bab8e2/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                     <img src="https://cdn.lugc.link/208966fc-8fc9-4fe5-b087-b1c6f1bab8e2/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/" alt="Social">
                   </div>
 
                </div>
@@ -358,7 +375,7 @@
                   </div>
    
                   <div class="environment_image" id="changing_imageParty">
-                     <img src="https://cdn.lugc.link/d89bdd37-d9db-4024-a090-6d67f44dd701/-/crop/1440x970/0,112/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                     <img src="https://cdn.lugc.link/d89bdd37-d9db-4024-a090-6d67f44dd701/-/crop/1440x970/0,112/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/" alt="Participativo">
                   </div>
 
                </div>
@@ -390,7 +407,7 @@
                   </div>
    
                   <div class="environment_image" id="changing_imagePaleo">
-                     <img src="https://cdn.lugc.link/4282b0e6-6ee2-41d9-8d2b-4472004f598b/-/crop/1440x1119/0,321/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                     <img src="https://cdn.lugc.link/4282b0e6-6ee2-41d9-8d2b-4472004f598b/-/crop/1440x1119/0,321/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/" alt="Paleo">
                   </div>
 
                </div>
@@ -420,7 +437,7 @@
                   </div>
    
                   <div class="environment_image">
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/dGU0k18KqUc?si=xiA4e5cvtLE6WVUm&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     <iframe title="Artico" width="560" height="315" src="https://www.youtube.com/embed/dGU0k18KqUc?si=xiA4e5cvtLE6WVUm&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
 
                </div>
@@ -440,7 +457,7 @@
                   </div>
    
                   <div class="environment_image" id="changing_imageGarden">
-                     <img src="https://cdn.lugc.link/b64ab22b-1ccb-410f-9d9a-f7feb4840527/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/">
+                     <img src="https://cdn.lugc.link/b64ab22b-1ccb-410f-9d9a-f7feb4840527/-/preview/-/stretch/off/-/format/auto/-/quality/normal/-/preview/" alt="Patio sustentable">
                   </div>
 
                </div>
@@ -451,6 +468,7 @@
          </div>
       </div>
      </section>
+     
 
      <!--=============== ACTIVITYS ===============-->
      <section class="activitys">
@@ -458,7 +476,7 @@
 
       <div class="activitys_content">
          <div class="activity_left">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dGU0k18KqUc?si=OeP5U81HshrDyzal&amp;start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe title="El artico" width="560" height="315" src="https://www.youtube.com/embed/dGU0k18KqUc?si=OeP5U81HshrDyzal&amp;start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
             <a href="#" class="activity_left_title">Ver mas</a>
         </div>
@@ -476,7 +494,7 @@
      <!--=============== LOCATION ===============-->
      <section class="location">
       <div class="museum_location_map">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.4755947341039!2d-106.4287451369095!3d31.68990227167915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75c320bf457f7%3A0x5e3f28d1f3b206f8!2sLa%20Rodadora%20Espacio%20Interactivo!5e0!3m2!1sen!2smx!4v1740368238071!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <iframe title="Donde me encuentro" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.4755947341039!2d-106.4287451369095!3d31.68990227167915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75c320bf457f7%3A0x5e3f28d1f3b206f8!2sLa%20Rodadora%20Espacio%20Interactivo!5e0!3m2!1sen!2smx!4v1740368238071!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
 
@@ -484,7 +502,7 @@
          <p>Nuestro horario es:</p>
          <div class="subschedule">
             <div class="time left">
-               <p>Jueves y viernes</p>
+               <p>Miercoles, Jueves y viernes</p>
                <p>9:00 am a 5:00 pm</p>
             </div>
             <div class="time right">
@@ -541,10 +559,10 @@
       </div><br>
 
       <div class="footer_img">
-         <img src="https://images.assets-landingi.com/YvIV58n9/logo_rodadora.png">
-         <img src="https://cdn.lugc.link/873301fe-6b8f-4e60-af49-bc4cdcb2fadd/-/preview/70x71/-/format/auto/">
-         <img src="https://images.assets-landingi.com/e78hgnDh/punto_limpio_logo.webp">
-         <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150780-d4946477-Reviews-La_Rodadora_Espacio_Interactivo-Ciudad_Juarez_Northern_Mexico.html"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"></a>
+         <img src="https://images.assets-landingi.com/YvIV58n9/logo_rodadora.png" alt="Logo1">
+         <img src="https://cdn.lugc.link/873301fe-6b8f-4e60-af49-bc4cdcb2fadd/-/preview/70x71/-/format/auto/" alt="Logo2">
+         <img src="https://images.assets-landingi.com/e78hgnDh/punto_limpio_logo.webp" alt="Logo3">
+         <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150780-d4946477-Reviews-La_Rodadora_Espacio_Interactivo-Ciudad_Juarez_Northern_Mexico.html"><img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="Logo4"></a>
 
       </div>
 
@@ -552,6 +570,9 @@
       <a class="tyc" id="termsAndConditions" href="#">Términos y condiciones • Aviso de privacidad</a>
 
      </section>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f3743e" fill-opacity="1" d="M0,288L60,261.3C120,235,240,181,360,165.3C480,149,600,171,720,186.7C840,203,960,213,1080,192C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
