@@ -257,7 +257,7 @@ a {
   gap: 10px;
   padding: 10px;
 
-  background-image: url(../img/backgrounds/logo_larodadora_backgrund.png);
+  background-image: url(../img/backgrounds/logo_larodadora_backgrund.webp);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -438,7 +438,7 @@ a {
   align-items: center;
   flex-direction: column;
   background: var(--black-color-light);
-  background-image: url(../img/backgrounds/logo_larodadora_backgrund.png);
+  background-image: url(../img/backgrounds/logo_larodadora_backgrund.webp);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
